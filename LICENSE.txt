@@ -1,0 +1,8 @@
+ECHOBOUND Prototype
+
+Copyright (c) 2026
+
+This prototype code is provided for the project owner to use and modify.
+
+No third-party copyrighted game assets are included in this repository.
+Add or replace this license with the license you want to use for public distribution.

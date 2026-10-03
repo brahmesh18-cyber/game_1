@@ -1,0 +1,21 @@
+name: Validate Repository
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  repository-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check repository structure
+        shell: bash
+        run: |
+          test -f README.md
+          test -f .gitignore
+          test -f Assets/EchoBound/Runtime/Echo/EchoSystem.cs
+          test -f Assets/EchoBound/Runtime/Echo/RecordingSystem.cs
+          test -f Assets/EchoBound/Runtime/Echo/EchoPlayback.cs
+          echo "ECHOBOUND repository structure looks valid."
